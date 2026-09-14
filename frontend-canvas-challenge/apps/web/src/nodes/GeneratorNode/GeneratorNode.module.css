@@ -1,0 +1,42 @@
+.hint {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #667085;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.actions button {
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.actions button:disabled {
+  color: #98a2b3;
+  cursor: not-allowed;
+  background: #f9fafb;
+}
+
+.actions button:not(:disabled):hover {
+  border-color: #2970ff;
+  color: #2970ff;
+}
+
+.actions button:focus-visible {
+  outline: 2px solid #2970ff;
+  outline-offset: 1px;
+}
+
+.error {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #b42318;
+}

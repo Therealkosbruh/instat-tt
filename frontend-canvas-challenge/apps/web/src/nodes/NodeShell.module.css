@@ -1,0 +1,82 @@
+.shell {
+  min-width: 220px;
+  max-width: 260px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+  font-size: 13px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.title {
+  font-weight: 600;
+  color: #101828;
+  flex: 1;
+}
+
+.status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.idle {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+.progress {
+  background: #fef0c7;
+  color: #b54708;
+}
+
+.success {
+  background: #d1fadf;
+  color: #05603a;
+}
+
+.error {
+  background: #fee4e2;
+  color: #b42318;
+}
+
+.deleteButton {
+  border: none;
+  background: transparent;
+  color: #98a2b3;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.deleteButton:hover {
+  background: #fee4e2;
+  color: #b42318;
+}
+
+.deleteButton:focus-visible {
+  outline: 2px solid #2970ff;
+  outline-offset: 1px;
+}
+
+.body {
+  padding: 10px;
+}
+
+.handle {
+  width: 10px;
+  height: 10px;
+  background: #2970ff;
+  border: 2px solid #ffffff;
+}

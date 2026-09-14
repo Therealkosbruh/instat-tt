@@ -1,0 +1,44 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.bar button {
+  border: 1px solid currentColor;
+  background: transparent;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.saved {
+  color: #05603a;
+}
+
+.dirty {
+  color: #b54708;
+}
+
+.saving {
+  color: #175cd3;
+}
+
+.error {
+  color: #b42318;
+}
+
+.conflict {
+  color: #b42318;
+  font-weight: 600;
+}
+
+.detail {
+  color: #667085;
+  font-weight: 400;
+}

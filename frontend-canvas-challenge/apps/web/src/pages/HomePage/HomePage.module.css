@@ -1,0 +1,97 @@
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.field {
+  position: relative;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
+  background: #ffffff;
+}
+
+.field label {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  padding: 0 4px;
+  background: #fbfbfb;
+  font-size: 11px;
+  color: #667085;
+  line-height: 1;
+}
+
+.field input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  background: transparent;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.field:focus-within {
+  border-color: #2970ff;
+}
+
+.field:focus-within label {
+  color: #2970ff;
+}
+
+.form button {
+  border: 1px solid #2970ff;
+  background: #2970ff;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 9px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #b42318;
+  font-size: 13px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+}
+
+.date {
+  color: #98a2b3;
+  font-size: 12px;
+}
