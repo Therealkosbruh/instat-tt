@@ -1,0 +1,24 @@
+@use '@/shared/styles/variables' as *;
+@use '@/shared/styles/mixins' as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $beige-line;
+  padding: 24px $gutter;
+
+  @media (max-width: 640px) {
+    padding: 20px $gutter-sm;
+  }
+}
+
+.credit {
+  @include focus-ring;
+  font-size: 13px;
+  color: $sage-pale;
+  text-decoration: none;
+
+  &:hover {
+    color: $ink-soft;
+  }
+}

@@ -1,0 +1,90 @@
+@use '@/shared/styles/variables' as *;
+@use '@/shared/styles/mixins' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 24px;
+  gap: 10px;
+}
+
+.iconCircle {
+  width: 74px;
+  height: 74px;
+  border-radius: $r-pill;
+  background: $beige-muted;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $ink-soft;
+  margin-bottom: 6px;
+}
+
+.title {
+  @include script(30px);
+  color: $ink;
+  margin: 0;
+}
+
+.text {
+  color: $ink-soft;
+  max-width: 360px;
+  margin: 0;
+}
+
+.action {
+  @include focus-ring;
+  margin-top: 12px;
+  border: 1px solid $beige;
+  border-radius: $r-pill;
+  padding: 11px 24px;
+  background: none;
+  font: inherit;
+  color: $ink;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background: $beige-muted;
+  }
+}
+
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skCard {
+  animation: breathe 1.8s ease-in-out infinite;
+}
+
+.skCardImg {
+  aspect-ratio: 3 / 4;
+  border-radius: $r-md;
+  background: $beige-muted;
+}
+
+.skLine {
+  margin-top: 10px;
+  height: 12px;
+  width: 70%;
+  border-radius: $r-sm;
+  background: $beige-muted;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}

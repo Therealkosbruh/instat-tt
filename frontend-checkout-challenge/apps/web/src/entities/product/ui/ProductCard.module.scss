@@ -1,0 +1,71 @@
+@use '@/shared/styles/variables' as *;
+@use '@/shared/styles/mixins' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: $r-lg;
+  background: $cream;
+  box-shadow: $shadow-soft;
+  overflow: hidden;
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  @include placeholder-img;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: $ink;
+  color: $on-dark;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: $r-pill;
+}
+
+.soldOut {
+  .media,
+  .info {
+    opacity: 0.6;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px 20px;
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  color: $ink;
+}
+
+.description {
+  margin: 0;
+  font-size: 13px;
+  color: $ink-soft;
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.price {
+  font-size: 17px;
+  color: $ink;
+  font-weight: 500;
+}

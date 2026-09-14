@@ -1,0 +1,32 @@
+@use '@/shared/styles/variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: $cream-deep;
+  color: $ink-soft;
+  font-family: $font-sans;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

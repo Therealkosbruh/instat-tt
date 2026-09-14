@@ -1,0 +1,61 @@
+@use '@/shared/styles/variables' as *;
+@use '@/shared/styles/mixins' as *;
+
+.button {
+  @include focus-ring;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 28px;
+  border-radius: $r-pill;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    opacity 0.15s ease;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.primary {
+  background: $ink;
+  color: $on-dark;
+
+  &:hover:not(:disabled) {
+    background: $ink-soft;
+  }
+}
+
+.ghost {
+  background: none;
+  border-color: $beige;
+  color: $ink;
+
+  &:hover:not(:disabled) {
+    background: $beige-muted;
+  }
+}
+
+.danger {
+  background: $danger-bg;
+  color: $danger;
+
+  &:hover:not(:disabled) {
+    background: $beige-muted;
+  }
+}
+
+.spinner {
+  flex-shrink: 0;
+}

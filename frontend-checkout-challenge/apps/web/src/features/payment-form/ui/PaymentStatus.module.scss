@@ -1,0 +1,35 @@
+@use '@/shared/styles/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 24px 0;
+}
+
+.iconCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: $r-pill;
+  background: $beige-muted;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $ink-soft;
+  margin-bottom: 4px;
+}
+
+.title {
+  margin: 0;
+  color: $ink;
+  font-size: 17px;
+}
+
+.text {
+  margin: 0 0 8px;
+  color: $ink-soft;
+  font-size: 14px;
+  max-width: 320px;
+}

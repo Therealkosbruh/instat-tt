@@ -1,0 +1,32 @@
+@use '@/shared/styles/variables' as *;
+@use '@/shared/styles/mixins' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px $gutter;
+
+  @media (max-width: 640px) {
+    padding: 20px $gutter-sm;
+  }
+}
+
+.logo {
+  @include script(34px);
+  color: $ink;
+  text-decoration: none;
+}
+
+.cartLink {
+  @include focus-ring;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: $pistachio;
+  border-radius: $r-pill;
+  padding: 11px 20px;
+  color: $ink;
+  text-decoration: none;
+  font-size: 14px;
+}

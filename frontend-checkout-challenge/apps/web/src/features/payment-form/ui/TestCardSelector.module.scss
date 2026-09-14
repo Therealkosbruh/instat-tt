@@ -1,0 +1,28 @@
+@use '@/shared/styles/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error {
+  margin: 0;
+  font-size: 14px;
+  color: $danger;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+
+  > * {
+    flex: 1;
+  }
+}

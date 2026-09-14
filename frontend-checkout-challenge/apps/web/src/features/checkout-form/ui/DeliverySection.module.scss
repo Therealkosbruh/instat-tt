@@ -1,0 +1,22 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.methods,
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}

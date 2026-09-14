@@ -1,0 +1,62 @@
+@use '@/shared/styles/variables' as *;
+@use '@/shared/styles/mixins' as *;
+
+.page {
+  padding: 8px $gutter 64px;
+
+  @media (max-width: 640px) {
+    padding: 8px $gutter-sm 48px;
+  }
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  @include script(34px);
+  color: $ink;
+  margin: 0;
+}
+
+.count {
+  margin: 4px 0 0;
+  color: $ink-soft;
+  font-size: 14px;
+}
+
+.continue {
+  @include focus-ring;
+  color: $ink-soft;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 20px;
+  background: $cream;
+  border-radius: $r-lg;
+  box-shadow: $shadow-soft;
+}
+
+.checkoutLink {
+  display: block;
+  text-decoration: none;
+}
